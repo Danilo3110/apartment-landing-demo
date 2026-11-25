@@ -1,0 +1,53 @@
+@use 'tokens' as *;
+
+.footer {
+  padding-block: 3.5rem 2rem;
+  background: #16221c;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.94rem;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .logo {
+    color: #fff;
+  }
+}
+
+.footer__top {
+  display: grid;
+  gap: 2rem;
+
+  @include up($bp-md) {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+}
+
+.footer__brand p {
+  max-width: 22rem;
+  margin-top: 1rem;
+}
+
+.footer__links,
+.footer__contact {
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.82rem;
+}

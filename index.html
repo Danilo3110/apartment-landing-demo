@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="sr-Latn-RS">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartman Breza – Zlatibor | Smeštaj za 2–4 osobe</title>
+    <meta
+      name="description"
+      content="Svetao apartman sa terasom i pogledom na borovu šumu, 5 minuta hoda od centra Zlatibora. Besplatan parking, Wi-Fi i opremljena kuhinja."
+    />
+    <meta name="theme-color" content="#24493a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph (update the URL once the site has its own domain) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Apartman Breza – Zlatibor" />
+    <meta
+      property="og:description"
+      content="Apartman za 2–4 osobe sa terasom i pogledom na šumu, 5 minuta od centra Zlatibora."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&h=630&q=70"
+    />
+    <meta property="og:url" content="https://danilo3110.github.io/apartment-landing-demo/" />
+
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Apartman Breza",
+        "description": "Apartman za 2–4 osobe sa terasom, 5 minuta hoda od centra Zlatibora.",
+        "url": "https://danilo3110.github.io/apartment-landing-demo/",
+        "priceRange": "45–70 €",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Zlatibor",
+          "addressCountry": "RS"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 43.729, "longitude": 19.699 },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Parking", "value": true }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Netlify Forms: hidden copy of the form so Netlify can detect its fields at build time. -->
+    <form name="inquiry" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="arrival" />
+      <input name="departure" />
+      <input name="guests" />
+      <textarea name="message"></textarea>
+      <input name="total" />
+      <input name="bot-field" />
+    </form>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "demo-apartman-breza",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Demo landing page for a holiday apartment in Zlatibor, Serbia (React + Vite + SCSS, Serbian/English).",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5180 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 5181 --strictPort",
+    "format": "prettier --write src *.json *.js *.html *.md",
+    "build:pages": "vite build && node scripts/prepare-pages.mjs",
+    "deploy": "npm run build:pages && gh-pages -d dist --dotfiles -m \"Deploy site\" -u \"Danilo Lukić <lukic3.dev@gmail.com>\""
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "5.3.0",
+    "@fontsource-variable/manrope": "5.3.0",
+    "lucide-react": "1.76.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-intl": "12.2.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.3.0",
+    "gh-pages": "6.3.0",
+    "prettier": "3.10.1",
+    "sass": "1.108.2",
+    "vite": "8.3.8"
+  }
+}
