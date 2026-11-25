@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://danilo3110.github.io/apartment-landing-demo/sitemap.xml
